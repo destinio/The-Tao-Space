@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 
 import styled from '@emotion/styled'
 import { useTheme } from '../hooks/useTheme'
+import { Chapter as ChapterType } from '../functions/getChapters'
 
 const StyledChapter = styled.article`
   position: relative;
@@ -10,7 +11,7 @@ const StyledChapter = styled.article`
     margin: 0 0 0.6em;
   }
 
-  span {
+  p {
     margin: 0 0 0.25em;
   }
 `
@@ -56,22 +57,40 @@ const StyledChapterContent = styled.div<StyledChapterContentProps>(props => ({
 }))
 
 interface ChapterProps {
-  id: string
-  title: string
-  children: ReactNode
+  data: ChapterType
 }
 
-function Chapter({ id, title, children }: ChapterProps) {
+function Chapter({ data }: ChapterProps) {
   const { currentTheme } = useTheme()
 
   return (
-    <StyledChapter id={`chapter-${id}`} data-chapter-id={`chapter-${id}`}>
+    <StyledChapter
+      id={`chapter-${data.id}`}
+      data-chapter-id={`chapter-${data.id}`}
+    >
       <StyledChapterHeader>
-        <h2 data-chapter-id={id}>Chapter {id}</h2>
-        <h3>{title}</h3>
+        <h2 data-chapter-id={data.id}>Chapter {data.id}</h2>
+        <h3>{data.title}</h3>
       </StyledChapterHeader>
       <StyledChapterContent currentTheme={currentTheme}>
-        {children}
+        {data.sections.map(s => {
+          return (
+            <section key={s.id} data-section-id={s.section_number}>
+              {s.lines.map(l => {
+                return <p key={`${s.id}-${s.section_number}`}>{l}</p>
+              })}
+            </section>
+          )
+        })}
+
+        <section className="notes">
+          <h3>Notes:</h3>
+          <div>
+            {data.notes.map(n => (
+              <p key={Math.floor(Math.random() * 100000)}>{n}</p>
+            ))}
+          </div>
+        </section>
       </StyledChapterContent>
     </StyledChapter>
   )
