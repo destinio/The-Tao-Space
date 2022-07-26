@@ -1,19 +1,22 @@
 import styled from '@emotion/styled'
+import { useChapters } from '../hooks/useChapters'
 
 const StyledChapter = styled.ul``
 
 function ChaptersMenu() {
+  const { chapters } = useChapters()
+
+  if (!chapters) return <h1>loading...</h1>
+
   return (
     <StyledChapter>
-      <li>
-        <a href="#chapter-1">1 - Welcome, What is the Tao?</a>
-      </li>
-      <li>
-        <a href="#chapter-2">2 - Opposites / Duality</a>
-      </li>
-      <li>
-        <a href="#chapter-3">3 - Restraint</a>
-      </li>
+      {chapters.map(c => (
+        <li key={`${c.id}-${Math.floor(Math.random() * 1000000)}`}>
+          <a href={`/#chapter-${c.id}`}>
+            {c.id} - {c.title}
+          </a>
+        </li>
+      ))}
     </StyledChapter>
   )
 }
