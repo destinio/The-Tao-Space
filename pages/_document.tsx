@@ -8,22 +8,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" type="image/svg+xml" href="/tao.svg" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta name="title" content="The Tao Space" />
-          <meta
-            name="description"
-            content="A collection of translations and notes on the Tao Te Ching. Translated by James Legge and maintained by destin.io"
-          />
-          <meta
-            name="keywords"
-            content="tao, tao te, tao te ching, james legge, the tao, tao learning, tao translation, destin.io, destinio"
-          />
-          <meta name="robots" content="index, nofollow" />
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-          <meta name="language" content="English" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

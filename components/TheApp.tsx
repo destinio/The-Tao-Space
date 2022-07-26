@@ -1,3 +1,4 @@
+import { ChapterFour } from '../chapters/ChapterFour'
 import { ChapterOne } from '../chapters/ChapterOne'
 import { ChapterThree } from '../chapters/ChapterThree'
 import { ChapterTwo } from '../chapters/ChapterTwo'
@@ -16,6 +17,7 @@ function TheApp() {
         <ChapterOne />
         <ChapterTwo />
         <ChapterThree />
+        <ChapterFour />
       </main>
       <Footer />
     </>
