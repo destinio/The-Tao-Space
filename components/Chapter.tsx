@@ -1,8 +1,6 @@
-import { ReactNode } from 'react'
-
 import styled from '@emotion/styled'
 import { useTheme } from '../hooks/useTheme'
-import { Chapter as ChapterType } from '../functions/getChapters'
+import { Chapter as ChapterType } from '../types'
 
 const StyledChapter = styled.article`
   position: relative;
@@ -75,9 +73,12 @@ function Chapter({ data }: ChapterProps) {
       <StyledChapterContent currentTheme={currentTheme}>
         {data.sections.map(s => {
           return (
-            <section key={s.id} data-section-id={s.section_number}>
+            <section
+              key={Math.floor(Math.random() * 100000)}
+              data-section-id={s.section_number}
+            >
               {s.lines.map(l => {
-                return <p key={`${s.id}-${s.section_number}`}>{l}</p>
+                return <p key={`${Math.floor(Math.random() * 100000)}`}>{l}</p>
               })}
             </section>
           )

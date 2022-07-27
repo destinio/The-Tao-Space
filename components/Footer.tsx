@@ -48,6 +48,16 @@ function Footer() {
           </ul>
         </section>
         <section>
+          <h3>Other</h3>
+          <ul>
+            <li>
+              <a href="https://www.gutenberg.org/files/49965/49965-h/49965-h.htm">
+                A Minimalist Translation - Bruce R. Linnell, PhD
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
           <strong>
             Maintained by <a href="https://destin.io">destin.io</a> ✌️
           </strong>

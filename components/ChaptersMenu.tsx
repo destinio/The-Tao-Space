@@ -11,7 +11,7 @@ function ChaptersMenu() {
   return (
     <StyledChapter>
       {chapters.map(c => (
-        <li key={`${c.id}-${Math.floor(Math.random() * 1000000)}`}>
+        <li key={`${Math.floor(Math.random() * 1000000)}`}>
           <a href={`/#chapter-${c.id}`}>
             {c.id} - {c.title}
           </a>

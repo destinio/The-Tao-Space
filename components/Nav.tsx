@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
-import { useState } from 'react'
-import { FaCog, FaListOl, FaMoon, FaRegMoon, FaSun } from 'react-icons/fa'
+import { FaListOl, FaMoon, FaSun } from 'react-icons/fa'
 import { useSideMenu } from '../hooks/useSideMenu'
 import { useTheme } from '../hooks/useTheme'
 import { ChaptersMenu } from './ChaptersMenu'
@@ -51,7 +50,7 @@ function Nav() {
       <div onClick={handleLightDarkChange}>
         {currentTheme.name === 'light' ? <FaMoon /> : <FaSun />}
       </div>
-      <FaCog role="button" />
+      {/* <FaCog role="button" /> */}
     </StyledNav>
   )
 }

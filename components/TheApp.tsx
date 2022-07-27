@@ -16,7 +16,7 @@ function TheApp() {
       <Rainbow />
       <main>
         {chapters.map(c => {
-          return <Chapter data={c} />
+          return <Chapter key={c.id} data={c} />
         })}
       </main>
       <Footer />
