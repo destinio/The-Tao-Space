@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import { Chapter, getChapters } from '../functions/getChapters'
+import { getChapters } from '../functions/getChapters'
+import { Chapter } from '../types'
 
 interface ChaptersCtxValues {
   chapters: Chapter[]

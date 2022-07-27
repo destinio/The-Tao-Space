@@ -1,9 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { Chapter, getChapters } from '../../functions/getChapters'
+import { getChapters } from '../../functions/getChapters'
+import { Chapter } from '../../types'
 
 export default function handler(
-  req: NextApiRequest,
+  _req: NextApiRequest,
   res: NextApiResponse<Chapter[]>
 ) {
   const data = getChapters()
