@@ -12,7 +12,7 @@ const StyledMenu = styled.div`
   height: 100vh;
   width: 100%;
   max-width: 400px;
-  background-color: snow;
+  background-color: #fafbff;
   border-left: 4px solid ${mainColor};
   z-index: 2;
 `

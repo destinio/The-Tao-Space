@@ -5,13 +5,21 @@ const StyledFooter = styled.footer`
   color: #222;
   font-size: 0.8em;
 
+  h2 {
+    margin: 0 0 1em;
+  }
+
+  h3 {
+    margin: 0 0 1em;
+  }
+
   & > div.footer-main {
     padding: 2em;
   }
 
-  /* h2 {
-    padding: 1em;
-  } */
+  section {
+    padding: 0;
+  }
 `
 
 function Footer() {
@@ -55,8 +63,19 @@ function Footer() {
                 A Minimalist Translation - Bruce R. Linnell, PhD
               </a>
             </li>
+            <li>
+              <a href="https://www.gutenberg.org/files/49965/49965-h/49965-h.htm">
+                Taoist Studies and Practices - Michael P. Garofalo
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gutenberg.org/files/49965/49965-h/49965-h.htm">
+                Taoistic: Tao Te Ching Explained - Stefan Stenudd
+              </a>
+            </li>
           </ul>
         </section>
+        {/* RIGHT SIDE */}
         <section>
           <strong>
             Maintained by <a href="https://destin.io">destin.io</a> ✌️

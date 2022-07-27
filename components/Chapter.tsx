@@ -87,9 +87,13 @@ function Chapter({ data }: ChapterProps) {
         <section className="notes">
           <h3>Notes:</h3>
           <div>
-            {data.notes.map(n => (
-              <p key={Math.floor(Math.random() * 100000)}>{n}</p>
-            ))}
+            {data.notes.map(n => {
+              if (n.length === 0) {
+                return <br key={Math.floor(Math.random() * 100000)} />
+              }
+
+              return <p key={Math.floor(Math.random() * 100000)}>{n}</p>
+            })}
           </div>
         </section>
       </StyledChapterContent>

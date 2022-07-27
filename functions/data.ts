@@ -193,6 +193,59 @@ const data = [
       'Infinity meditation https://www.youtube.com/watch?v=_DjKogutWts',
     ],
   },
+  {
+    id: 5,
+    title: 'Impartiality',
+    sections: [
+      {
+        section_number: 1,
+        lines: [
+          'Heaven and earth are not humane.',
+          'They deal with all things as straw dogs.',
+          'The wise are not humane.',
+          'They deal with people as straw dogs.',
+        ],
+      },
+      {
+        section_number: 2,
+        lines: ['Heaven and earth act as a bellows.'],
+      },
+      {
+        section_number: 3,
+        lines: [
+          'Tis emptied, yet it loses not its power.',
+          'Tis moved again, and sends forth air the more.',
+          'Much speech leads to exhaustion.',
+          'Your inner being guard, and keep it free. Stay centered.',
+        ],
+      },
+    ],
+    notes: [
+      'Part 1: The Toa is impartial to all things',
+      'Part 2: The Toa is abundant and infinitely powerful',
+      'Part 3: Live at peace with the Toa by staying centered.',
+      '',
+      "don't play favoritism",
+      "don't compare yourself to others",
+      "don't compare others to others",
+      '',
+      'everyone deserves the same thing',
+      '',
+      'Altruism - https://en.wikipedia.org/wiki/Altruism',
+      'Straw Dog - https://en.wikipedia.org/wiki/Straw_dog',
+      'Bellows - https://en.wikipedia.org/wiki/Bellows',
+      "The more connected to the Tao you are the more tapped into the Tao's Abundance you become",
+      'Create from the place of love',
+      'good deeds ripple',
+      '',
+      'Stay centered and remain impartial to all things',
+      '',
+      'Our egos and endless speech distract us from the Toa',
+      '',
+      'Is there anything you can control. If not; don\t worry about it',
+      'Resistance is Futile!!',
+    ],
+  },
 ] as Chapter[]
 
 export { data }
