@@ -246,6 +246,34 @@ const data = [
       'Resistance is Futile!!',
     ],
   },
+  {
+    id: 6,
+    title: 'Creation',
+    sections: [
+      {
+        section_number: 1,
+        lines: [
+          'The spirit is immortal.',
+          'The female mystery thus do we name.',
+        ],
+      },
+      {
+        section_number: 2,
+        lines: [
+          'Its gate, from which all issued forth.',
+          'Is called the root from which grew heaven and earth.',
+        ],
+      },
+      {
+        section_number: 3,
+        lines: [
+          'Long and unbroken does its power remains.',
+          'Continually giving forth life without effort',
+        ],
+      },
+    ],
+    notes: [''],
+  },
 ] as Chapter[]
 
 export { data }
