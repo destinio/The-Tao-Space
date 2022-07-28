@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import Link from 'next/link'
 import { VscJson } from 'react-icons/vsc'
 import { Rainbow } from './Rainbow'
 
@@ -97,7 +98,7 @@ function Footer() {
               </strong>
             </p>
             <p>
-              <a href="/api/chapters">JSON API</a> <VscJson />
+              <Link href="/api/chapters">JSON API</Link> <VscJson />
             </p>
           </section>
         </div>
