@@ -1,4 +1,4 @@
-import { Chapter } from '../../../types'
+import { Chapter } from '../types'
 
 const data = [
   {
