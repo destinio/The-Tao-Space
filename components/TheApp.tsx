@@ -4,6 +4,7 @@ import { Footer } from './Footer'
 import { Header } from './Header'
 import { Nav } from './Nav'
 import { Rainbow } from './Rainbow'
+import { ChaptersBeta } from './ChaptersBeta'
 
 function TheApp() {
   const { chapters } = useChapters()
@@ -15,9 +16,10 @@ function TheApp() {
       <Nav />
       <Rainbow />
       <main>
-        {chapters.map(c => {
+        {/* {chapters.map(c => {
           return <Chapter key={c.id} data={c} />
-        })}
+        })} */}
+        <ChaptersBeta />
       </main>
       <Footer />
     </>
