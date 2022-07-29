@@ -1,7 +1,9 @@
-import { data } from './data'
+import { chapterModel } from 'models/chapterModel'
+// import { data } from './data'
 
-function getChapters() {
-  return data
+async function getChapters() {
+  const chaps = await chapterModel.find()
+  return chaps
 }
 
 export { getChapters }

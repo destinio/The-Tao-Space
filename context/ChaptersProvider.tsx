@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import { getChapters } from '../functions/getChapters'
-import { Chapter } from '../types'
+import { getChapters } from 'functions/getChapters'
+import { ChapterData as Chapter } from 'types'
 
 interface ChaptersCtxValues {
   chapters: Chapter[]
@@ -15,9 +15,13 @@ interface ChaptersProviderProps {
 function ChaptersProvider({ children }: ChaptersProviderProps) {
   const [chapters, setChapters] = useState<Chapter[]>(null!)
 
-  useEffect(() => {
-    const data = getChapters()
+  async function getData() {
+    const data = await getChapters()
     setChapters(data)
+  }
+
+  useEffect(() => {
+    getData()
   }, [])
 
   const chaptersValues = {
