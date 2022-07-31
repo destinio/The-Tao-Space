@@ -3,6 +3,7 @@ import { FaListOl, FaMoon, FaSun } from 'react-icons/fa'
 import { useSideMenu } from 'hooks/useSideMenu'
 import { useTheme } from 'hooks/useTheme'
 import { ChaptersMenu } from './ChaptersMenu'
+import { hexColors } from 'styles/GlobalStyles'
 
 const StyledNav = styled.nav`
   position: fixed;
@@ -12,6 +13,10 @@ const StyledNav = styled.nav`
   gap: 1em;
   color: #fff;
   z-index: 1;
+
+  /* @media screen and (min-width: 900px) {
+    color: ${hexColors.blue};
+  } */
 
   & > svg,
   & > div {

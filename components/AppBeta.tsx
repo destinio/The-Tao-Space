@@ -8,9 +8,20 @@ const StyledApp = styled.div`
   height: 100vh;
   grid-template-rows: repeat(2, 1fr);
 
+  main {
+    background-color: ${hexColors.white};
+    height: 100vh;
+  }
+
   @media screen and (min-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
+    grid-row: unset;
+
+    main {
+      grid-row: 1 / -1;
+    }
   }
+
   & > div {
     min-height: 50vh;
     width: 100%;
@@ -23,12 +34,12 @@ const StyledApp = styled.div`
     background-color: ${hexColors.purple};
   }
   & > div:nth-of-type(2) {
-    /* background-color: ${hexColors.green}; */
     background-color: ${hexColors.blue};
-    grid-column-start: 1;
-    grid-row-start: 2;
-  }
-  & > div:nth-of-type(3) {
+
+    @media screen and (min-width: 900px) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
   }
 `
 
@@ -42,7 +53,9 @@ function AppBeta() {
           <h1>The Tao Space</h1>
         </div>
         <div>1, 2, 3, 4</div>
-        <div></div>
+        <main>
+          <Rainbow />
+        </main>
       </StyledApp>
     </>
   )
