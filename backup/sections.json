@@ -1,0 +1,497 @@
+[{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638144"
+  },
+  "section_number": 1,
+  "chapter_number": 1,
+  "lines": [
+    "The Tao that can be named is not the enduring and unchanging Tao.",
+    "The name that can be named is not the enduring and unchanging name."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260599"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260599"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638145"
+  },
+  "section_number": 2,
+  "chapter_number": 1,
+  "lines": [
+    "Conceived of having no name, it is the Originator of spirit and earth",
+    "Conceived of having a name, it is the Mother of all things."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260599"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260599"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638146"
+  },
+  "section_number": 3,
+  "chapter_number": 1,
+  "lines": [
+    "Always without desire, we must be found, if we are to find spirituality.",
+    "Always with desire, material is all we will see."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638147"
+  },
+  "section_number": 4,
+  "chapter_number": 1,
+  "lines": [
+    "Under these two aspects, it is really the same with different names;",
+    "As development takes place, it receives different names."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638148"
+  },
+  "section_number": 5,
+  "chapter_number": 1,
+  "lines": [
+    "Together we call them the Mystery.",
+    "This is the mystery of mysteries.",
+    "The gateway to spirituality."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638149"
+  },
+  "section_number": 1,
+  "chapter_number": 2,
+  "lines": [
+    "All in the world know the beauty of the beautiful.",
+    "Doing so they have the idea of what ugliness is."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814a"
+  },
+  "section_number": 2,
+  "chapter_number": 2,
+  "lines": [
+    "They all know the skills of the skilful.",
+    "Doing this they have the idea of what the want of skill is."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814b"
+  },
+  "section_number": 3,
+  "chapter_number": 2,
+  "lines": [
+    "They all know the skills of the skilful.",
+    "Doing this they have the idea of what the want of skill is."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814c"
+  },
+  "section_number": 4,
+  "chapter_number": 2,
+  "lines": [
+    "So it is that existence and non-existence gives birth to the idea of the other.",
+    "That difficulty and ease produce the idea of the other.",
+    "That the ideas of height and lowness arise from the contrast of the other.",
+    "That the musical notes and tones become harmonious through the revelation of one with other.",
+    "That before and behind give the idea of one following the other.",
+    "Therefore the wise manages affairs without doing anything, and conveys his instructions without the use of speech."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814d"
+  },
+  "section_number": 5,
+  "chapter_number": 2,
+  "lines": [
+    "Troubles spring up, and the wise remain calm",
+    "they create, and there is no claim made for their ownership",
+    "they go through their processes, and there is no expectation of a reward for the results."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814e"
+  },
+  "section_number": 6,
+  "chapter_number": 2,
+  "lines": [
+    "The work is accomplished, and there is no resting in it (as an achievement)."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263814f"
+  },
+  "section_number": 1,
+  "chapter_number": 3,
+  "lines": [
+    "Not to value and employ those of superior ability is the way to keep the people from rivalry among themselves.",
+    "Not to prize things which are difficult to procure is the way to keep them from becoming thieves.",
+    "Not to show them what is likely to excite their desires is the way to keep their minds from disorder."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638150"
+  },
+  "section_number": 2,
+  "chapter_number": 3,
+  "lines": [
+    "Wise leaders, empty the minds of their people, fills their bellies, weakens their ambitions, and strengthens their bones.",
+    "They Keep them without knowledge and without desire. There are those who have knowledge, they keep them from presuming to act."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260600"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638151"
+  },
+  "section_number": 3,
+  "chapter_number": 3,
+  "lines": [
+    "When there is restraint from action, good order is universal."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638152"
+  },
+  "section_number": 1,
+  "chapter_number": 4,
+  "lines": [
+    "The Tao is empty but inexhaustible.",
+    "How deep and unfathomable it is, the Ancestor of all things!"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638153"
+  },
+  "section_number": 2,
+  "chapter_number": 4,
+  "lines": [
+    "It blunts sharpness.",
+    "Loosens tangles.",
+    "Softens brightness.",
+    "Softens brightness",
+    "The dust settles into place."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638154"
+  },
+  "section_number": 3,
+  "chapter_number": 4,
+  "lines": [
+    "Deep and profound!",
+    "Hidden but always present",
+    "I do not know whose child it is.",
+    "It might appear to have been the ancestor of all."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638155"
+  },
+  "section_number": 1,
+  "chapter_number": 5,
+  "lines": [
+    "Heaven and earth are not humane.",
+    "They deal with all things as straw dogs.",
+    "The wise are not humane.",
+    "They deal with people as straw dogs."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638156"
+  },
+  "section_number": 2,
+  "chapter_number": 5,
+  "lines": [
+    "Heaven and earth act as a bellows."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638157"
+  },
+  "section_number": 3,
+  "chapter_number": 5,
+  "lines": [
+    "Tis emptied, yet it loses not its power.",
+    "Tis moved again, and sends forth air the more.",
+    "Much speech leads to exhaustion.",
+    "Your inner being guard, and keep it free. Stay centered."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638158"
+  },
+  "section_number": 1,
+  "chapter_number": 6,
+  "lines": [
+    "The spirit is immortal.",
+    "The female mystery thus do we name."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d6032638159"
+  },
+  "section_number": 2,
+  "chapter_number": 6,
+  "lines": [
+    "Its gate, from which all issued forth.",
+    "Is called the root from which grew heaven and earth."
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdbca3277d603263815a"
+  },
+  "section_number": 3,
+  "chapter_number": 6,
+  "lines": [
+    "Long and unbroken does its power remains.",
+    "Continually giving forth life without effort"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043260601"
+    }
+  }
+}]

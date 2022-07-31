@@ -1,0 +1,169 @@
+[{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f100e"
+  },
+  "chapter_number": 1,
+  "title": "Welcome, What is the Tao?",
+  "notes": [
+    "Unnamed Tao it's just another word for spiritual experiences",
+    "To understand the Tao one must partake of it's nature.",
+    "Desire is the thing that blocks us from experiencing the unnameable part of the Tao",
+    "To see the nameless part of the Tao, we must think and act like the Tao",
+    "To see the Material (Named) side of the Tao. Is to live in our lives without growth",
+    "Mother of all created things = The Ten Thousand Things = material world",
+    "Heaven = Spirit and Earth = Matter",
+    "Opposites - two parts of the same thing",
+    "Night and Day are opposites, but part of the same day",
+    "Desire keeps us from going deeper"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317765"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317765"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f100f"
+  },
+  "chapter_number": 2,
+  "title": "Opposites / Duality",
+  "notes": [
+    "goodness, if not sincere is not really goodness",
+    "lightness/darkness",
+    "good/evil",
+    "not clear in action and and do not over talk. If at all.",
+    "It should not be know that a leader as lead.",
+    "create but do not hoard",
+    "expect no praise for their actions",
+    "create and move on"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f1010"
+  },
+  "chapter_number": 3,
+  "title": "Restraint",
+  "notes": [
+    "We also lead our selves. We are both, at one point or another, both leaders and followers",
+    "remember to practice this chapter as both the leader and the follower",
+    "lead from behind. serve those that are being lead",
+    "The wise keep the people free of bad ambition. We want to serve those that we are leading. Or, protect those that follow/look up to us. Don't make those that follow serve.",
+    "Don't insert your ego into anything",
+    "help to keep others ambitions in place"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f1011"
+  },
+  "chapter_number": 4,
+  "title": "Infinity",
+  "notes": [
+    "Part 1: Talks about Infinity",
+    "Part 2: What happens to things in Infinity",
+    "Part 3: Infinity is hidden but always present",
+    "Consider infinity every day!",
+    "",
+    "Infinity meditation https://www.youtube.com/watch?v=_DjKogutWts"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f1012"
+  },
+  "chapter_number": 5,
+  "title": "Impartiality",
+  "notes": [
+    "Part 1: The Toa is impartial to all things",
+    "Part 2: The Toa is abundant and infinitely powerful",
+    "Part 3: Live at peace with the Toa by staying centered.",
+    "",
+    "don't play favoritism",
+    "don't compare yourself to others",
+    "don't compare others to others",
+    "",
+    "everyone deserves the same thing",
+    "",
+    "Altruism - https://en.wikipedia.org/wiki/Altruism",
+    "Straw Dog - https://en.wikipedia.org/wiki/Straw_dog",
+    "Bellows - https://en.wikipedia.org/wiki/Bellows",
+    "The more connected to the Tao you are the more tapped into the Tao's Abundance you become",
+    "Create from the place of love",
+    "good deeds ripple",
+    "",
+    "Stay centered and remain impartial to all things",
+    "",
+    "Our egos and endless speech distract us from the Toa",
+    "",
+    "Is there anything you can control. If not; don\t worry about it",
+    "Resistance is Futile!!"
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62e2fdf51472b1fffa3f1013"
+  },
+  "chapter_number": 6,
+  "title": "Creation",
+  "notes": [
+    ""
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1659043317766"
+    }
+  }
+}]
