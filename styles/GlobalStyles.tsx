@@ -1,6 +1,15 @@
 import { css } from '@emotion/react'
 
-export const GlobalStyles = css`
+const hexColors = {
+  white: '#fafbff',
+  red: '#FF595E',
+  yellow: '#FFCA3A',
+  green: '#87c326',
+  blue: '#1982C4',
+  purple: '#6A4C93',
+}
+
+const GlobalStyles = css`
   * {
     margin: 0;
     padding: 0;
@@ -94,3 +103,5 @@ export const GlobalStyles = css`
     }
   }
 `
+
+export { hexColors, GlobalStyles }

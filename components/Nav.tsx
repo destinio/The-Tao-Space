@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { FaListOl, FaMoon, FaSun } from 'react-icons/fa'
-import { useSideMenu } from '../hooks/useSideMenu'
-import { useTheme } from '../hooks/useTheme'
+import { useSideMenu } from 'hooks/useSideMenu'
+import { useTheme } from 'hooks/useTheme'
 import { ChaptersMenu } from './ChaptersMenu'
 
 const StyledNav = styled.nav`
