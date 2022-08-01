@@ -4,10 +4,13 @@ interface Section {
 }
 
 interface Chapter {
-  id: number
+  _id: string
+  chapter_number: number
   title: string
-  sections: Section[]
-  notes: string[]
+  notes?: string[] | null
+  __v: number
+  createdAt: string
+  updatedAt: string
 }
 
 export { type Section, type Chapter }

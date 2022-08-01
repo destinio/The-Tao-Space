@@ -1,5 +1,4 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import { getChapters } from '../functions/getChapters'
 import { Chapter } from '../types'
 
 interface ChaptersCtxValues {
@@ -16,8 +15,10 @@ function ChaptersProvider({ children }: ChaptersProviderProps) {
   const [chapters, setChapters] = useState<Chapter[]>(null!)
 
   useEffect(() => {
-    const data = getChapters()
-    setChapters(data)
+    setChapters([])
+    fetch('/api/chapters')
+      .then(data => data.json())
+      .then(console.log)
   }, [])
 
   const chaptersValues = {
