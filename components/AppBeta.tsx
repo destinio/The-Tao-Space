@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
-import { hexColors } from 'styles/GlobalStyles'
-import { Nav } from 'components/Nav'
-import { Rainbow } from 'components/Rainbow'
+import { Nav } from './Nav'
+import { Rainbow } from './Rainbow'
 import { Footer } from './Footer'
+import { hexColors } from '../styles/GlobalStyles'
+import { convertToRoman } from 'functions/convertRoman'
 
 const StyledApp = styled.div`
   display: grid;
@@ -57,10 +58,22 @@ function AppBeta() {
       {/* <Rainbow /> */}
       <StyledApp>
         <Nav />
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h1>The Tao Space</h1>
+          <h2>Tao Te Ching</h2>
+          <summary>
+            <a href="https://en.wikipedia.org/wiki/Laozi">Lao Tzu</a>{' '}
+            <a
+              aria-label=""
+              href="https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge/text/single-page"
+            >
+              translated
+            </a>{' '}
+            by{' '}
+            <a href="https://en.wikipedia.org/wiki/James_Legge">James Legge</a>
+          </summary>
         </div>
-        <div>1, 2, 3, 4</div>
+        <div>{convertToRoman(21)}</div>
         <main>
           <Rainbow />
           <Footer />

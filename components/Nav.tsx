@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
   color: #fff;
   z-index: 1;
 
-  /* @media screen and (min-width: 900px) {
+  /* @media screen and (min-width: 800px) {
     color: ${hexColors.blue};
   } */
 

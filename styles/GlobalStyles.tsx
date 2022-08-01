@@ -29,13 +29,13 @@ const GlobalStyles = css`
     /* font-size: 1.2rem; */
     background-color: #fafbff;
 
-    @media screen and (min-width: 900px) {
-      font-size: 1.2rem;
+    @media screen and (min-width: 800px) {
+      /* font-size: 1.2rem; */
     }
   }
 
   main {
-    /* max-width: 900px; */
+    /* max-width: 800px; */
   }
 
   header {
@@ -68,11 +68,6 @@ const GlobalStyles = css`
 
   p {
     font-weight: 500;
-  }
-
-  summary {
-    font-size: 0.75em;
-    font-weight: normal;
   }
 
   a {

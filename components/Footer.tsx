@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import { VscJson } from 'react-icons/vsc'
-import { hexColors } from 'styles/GlobalStyles'
+import { hexColors } from '../styles/GlobalStyles'
 import { Rainbow } from './Rainbow'
 
 const StyledFooter = styled.footer`

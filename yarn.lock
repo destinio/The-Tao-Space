@@ -1693,7 +1693,7 @@
     "@types/whatwg-url" "^8.2.1"
     "whatwg-url" "^11.0.0"
 
-"mongodb@4.8.1":
+"mongodb@^4.8.1", "mongodb@4.8.1":
   "integrity" "sha512-/NyiM3Ox9AwP5zrfT9TXjRKDJbXlLaUDQ9Rg//2lbg8D2A8GXV0VidYYnA/gfdK6uwbnL4FnAflH7FbGw3TS7w=="
   "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-4.8.1.tgz"
   "version" "4.8.1"
