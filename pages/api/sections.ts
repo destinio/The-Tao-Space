@@ -10,7 +10,7 @@ export default async function handler(
 ) {
   const { db } = await connectToDatabase()
 
-  const chaps = await db.collection('chapters').find({}).toArray()
+  const secs = await db.collection('sections').find({}).toArray()
 
-  res.status(200).json(chaps)
+  res.status(200).json(secs)
 }
