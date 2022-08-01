@@ -18,7 +18,9 @@ function ChaptersProvider({ children }: ChaptersProviderProps) {
     setChapters([])
     fetch('/api/chapters')
       .then(data => data.json())
-      .then(console.log)
+      .then((data: Chapter[]) => {
+        setChapters(data.sort((a, b) => a.chapter_number - b.chapter_number))
+      })
   }, [])
 
   const chaptersValues = {
