@@ -5,9 +5,17 @@ const hexColors = {
   red: '#FF595E',
   yellow: '#FFCA3A',
   green: '#87c326',
-  blue: '#1982C4',
+  blue: '#125179',
   purple: '#6A4C93',
 }
+// const hexColors = {
+//   white: '#fafbff',
+//   red: '#FF595E',
+//   yellow: '#FFCA3A',
+//   green: '#87c326',
+//   blue: '#1982C4',
+//   purple: '#6A4C93',
+// }
 
 const GlobalStyles = css`
   * {

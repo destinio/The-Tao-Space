@@ -19,7 +19,7 @@ const StyledSection = styled.section`
     position: sticky;
     top: 0;
     color: ${hexColors.white};
-    background-color: ${hexColors.purple};
+    background-color: ${hexColors.blue};
   }
 
   & > div {

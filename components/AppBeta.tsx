@@ -14,8 +14,8 @@ const StyledApp = styled.div`
     height: 100vh;
   }
 
-  @media screen and (min-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 400px auto;
     grid-row: unset;
 
     main {
@@ -30,14 +30,19 @@ const StyledApp = styled.div`
     justify-content: center;
     align-items: center;
     color: ${hexColors.white};
+
+    @media screen and (min-width: 800px) {
+      /* max-width: 600px; */
+    }
   }
+
   & > div:nth-of-type(1) {
     background-color: ${hexColors.purple};
   }
   & > div:nth-of-type(2) {
     background-color: ${hexColors.blue};
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 800px) {
       grid-column-start: 1;
       grid-row-start: 2;
     }
