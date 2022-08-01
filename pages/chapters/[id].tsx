@@ -1,5 +1,11 @@
+import { useRouter } from 'next/router'
+
 export default function Chapters() {
-  return <>Chapter</>
+  const {
+    query: { id },
+  } = useRouter()
+
+  return <>Chapter {id}</>
 }
 
 export { Chapters }
