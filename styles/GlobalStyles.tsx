@@ -18,11 +18,11 @@ const GlobalStyles = css`
 
   body {
     font-family: 'Ibarra Real Nova', serif;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     background-color: #fafbff;
 
-    @media screen and (min-width: 700px) {
-      font-size: 1.5rem;
+    @media screen and (min-width: 900px) {
+      font-size: 1.2rem;
     }
   }
 
@@ -56,11 +56,6 @@ const GlobalStyles = css`
 
   li {
     margin: 0 0 0.75em;
-  }
-
-  section {
-    padding: 1em 1em 0;
-    max-width: 900px;
   }
 
   p {

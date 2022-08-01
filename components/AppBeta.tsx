@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { hexColors } from 'styles/GlobalStyles'
 import { Nav } from 'components/Nav'
 import { Rainbow } from 'components/Rainbow'
+import { Footer } from './Footer'
 
 const StyledApp = styled.div`
   display: grid;
@@ -43,6 +44,8 @@ const StyledApp = styled.div`
   }
 `
 
+// const StyledHeader
+
 function AppBeta() {
   return (
     <>
@@ -55,6 +58,7 @@ function AppBeta() {
         <div>1, 2, 3, 4</div>
         <main>
           <Rainbow />
+          <Footer />
         </main>
       </StyledApp>
     </>

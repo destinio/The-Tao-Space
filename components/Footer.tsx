@@ -1,36 +1,39 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import { VscJson } from 'react-icons/vsc'
+import { hexColors } from 'styles/GlobalStyles'
 import { Rainbow } from './Rainbow'
 
 const StyledFooter = styled.footer`
   color: #222;
-  font-size: 0.8em;
-
-  h2 {
-    margin: 0 0 1em;
-  }
 
   h3 {
     margin: 0 0 1em;
   }
+`
 
-  section {
-    padding: 0;
+const StyledSection = styled.section`
+  h2 {
+    padding: 1.4rem;
+    display: block;
+    position: sticky;
+    top: 0;
+    color: ${hexColors.white};
+    background-color: ${hexColors.purple};
+  }
+
+  & > div {
+    padding: 1rem;
   }
 `
 
 const StyledFooterMain = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
-
   p {
-    margin: 0 0 1em;
+    /* margin: 0 0 1em;
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.5em; */
   }
 `
 
@@ -39,9 +42,9 @@ function Footer() {
     <StyledFooter>
       <Rainbow />
       <StyledFooterMain>
-        <div>
+        <StyledSection id="resources">
           <h2>Resources</h2>
-          <section>
+          <div>
             <h3>Books</h3>
             <ul>
               <li>
@@ -55,8 +58,8 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </section>
-          <section>
+          </div>
+          <div>
             <h3>Podcasts</h3>
             <ul>
               <li>
@@ -67,8 +70,8 @@ function Footer() {
                 <span>Podcast by Dan Casas-Murray</span>
               </li>
             </ul>
-          </section>
-          <section>
+          </div>
+          <div>
             <h3>Other</h3>
             <ul>
               <li>
@@ -87,11 +90,11 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </section>
-        </div>
-        <div>
-          <section style={{ textAlign: 'right' }}>
-            <h2>Project Info</h2>
+          </div>
+        </StyledSection>
+        <StyledSection id="project-info">
+          <h2>Project Info</h2>
+          <div>
             <p>
               <strong>
                 Maintained by <a href="https://destin.io">destin.io</a> ✌️
@@ -100,8 +103,8 @@ function Footer() {
             <p>
               <Link href="/api/chapters">JSON API</Link> <VscJson />
             </p>
-          </section>
-        </div>
+          </div>
+        </StyledSection>
       </StyledFooterMain>
     </StyledFooter>
   )
