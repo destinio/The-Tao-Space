@@ -1,9 +1,9 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import { Chapter } from '../types'
+import { ChapterType } from 'types'
 
 interface ChaptersCtxValues {
-  chapters: Chapter[]
-  getChapter: (id: string) => Chapter
+  chapters: ChapterType[]
+  getChapter: (id: string) => ChapterType | undefined
   chaptersLoaded: boolean
 }
 
@@ -14,13 +14,13 @@ interface ChaptersProviderProps {
 }
 
 function ChaptersProvider({ children }: ChaptersProviderProps) {
-  const [chapters, setChapters] = useState<Chapter[]>(null!)
+  const [chapters, setChapters] = useState<ChapterType[]>(null!)
   const [chaptersLoaded, setChaptersLoaded] = useState(false)
 
   useEffect(() => {
     fetch('/api/chapters')
       .then(data => data.json())
-      .then((data: Chapter[]) => {
+      .then((data: ChapterType[]) => {
         setChapters(data.sort((a, b) => a.chapter_number - b.chapter_number))
         setChaptersLoaded(true)
       })

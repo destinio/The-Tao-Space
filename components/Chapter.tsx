@@ -2,15 +2,21 @@ import styled from '@emotion/styled'
 import { useChapters } from 'hooks/useChapters'
 import { useEffect, useState } from 'react'
 import { useApp } from 'hooks/useApp'
-import { Chapter } from 'types'
+import { ChapterType } from 'types'
 import { Nav } from './Nav'
 
-const StyledChapter = styled.article`
-  position: relative;
-
-  h3 {
-    margin: 0 0 0.6em;
+interface StyledChapterProps {
+  currentTheme: {
+    bg: string
+    text: string
   }
+}
+
+const StyledChapter = styled.article<StyledChapterProps>`
+  position: relative;
+  background-color: ${props => props.currentTheme.bg};
+  color: ${props => props.currentTheme.text};
+  height: 100vh;
 
   p {
     margin: 0 0 0.25em;
@@ -24,20 +30,20 @@ const StyledChapterHeader = styled.div`
   background-color: #1982c4;
   color: snow;
   top: 0;
-  padding: 1em;
+  padding: 2rem;
+  gap: 1em;
 
   h2 {
-    margin: 0 0 0.5em;
+    font-size: 1.3rem;
   }
 
   h3 {
-    font-size: 0.8em;
+    font-size: 2rem;
   }
 
   @media screen and (min-width: 700px) {
     flex-direction: row;
     align-items: center;
-    gap: 1em;
 
     h2 {
       margin: 0;
@@ -45,24 +51,14 @@ const StyledChapterHeader = styled.div`
   }
 `
 
-interface StyledChapterContentProps {
-  currentTheme: {
-    bg: string
-    text: string
-  }
-}
-
-const StyledChapterContent = styled.div<StyledChapterContentProps>(props => ({
-  backgroundColor: props.currentTheme.bg,
-  color: props.currentTheme.text,
-}))
+const StyledChapterContent = styled.div``
 
 interface ChapterProps {
   chapterId: string
 }
 
 function Chapter({ chapterId }: ChapterProps) {
-  const [chapter, setChapter] = useState<Chapter>(null!)
+  const [chapter, setChapter] = useState<ChapterType | undefined>(null!)
   const { getChapter, chaptersLoaded } = useChapters()
   const { currentTheme } = useApp()
 
@@ -70,18 +66,18 @@ function Chapter({ chapterId }: ChapterProps) {
     if (chaptersLoaded) {
       setChapter(getChapter(chapterId))
     }
-  }, [chaptersLoaded])
+  }, [chaptersLoaded, chapterId])
 
   if (!chaptersLoaded || !chapter) return <h1>Loading...</h1>
 
   return (
-    <StyledChapter>
+    <StyledChapter currentTheme={currentTheme}>
       <Nav />
       <StyledChapterHeader>
         <h2>Chapter {chapterId}</h2>
         <h3>{chapter.title || ''}</h3>
       </StyledChapterHeader>
-      <StyledChapterContent currentTheme={currentTheme}>
+      <StyledChapterContent>
         {/* {data.sections.map(s => {
           return (
             <section

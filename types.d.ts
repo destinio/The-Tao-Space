@@ -3,7 +3,7 @@ interface Section {
   lines: string[]
 }
 
-interface Chapter {
+interface ChapterType {
   _id: string
   chapter_number: number
   title: string
@@ -13,4 +13,4 @@ interface Chapter {
   updatedAt: string
 }
 
-export { type Section, type Chapter }
+export { type Section, type ChapterType }
