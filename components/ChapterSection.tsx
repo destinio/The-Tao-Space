@@ -3,8 +3,14 @@ import { useEffect, useState } from 'react'
 import { SectionType } from 'types'
 
 const StyledSections = styled.div`
+  padding: 1rem;
+
   section {
-    margin: 0 0 1rem;
+    padding: 1rem;
+    &:hover {
+      background-color: #d9dceb;
+      cursor: pointer;
+    }
   }
 `
 

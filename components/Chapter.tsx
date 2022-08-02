@@ -81,7 +81,14 @@ function Chapter({ chapterId }: ChapterProps) {
       </StyledChapterHeader>
       <StyledChapterContent>
         <ChapterSection chapterNumber={chapter.chapter_number.toString()} />
-        {/* Notes */}
+        <div style={{ padding: '2rem' }}>
+          <h3>Notes:</h3>
+          <ul>
+            {chapter.notes?.map(n => (
+              <p>{n}</p>
+            ))}
+          </ul>
+        </div>
       </StyledChapterContent>
     </StyledChapter>
   )
