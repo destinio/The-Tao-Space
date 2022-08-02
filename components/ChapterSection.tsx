@@ -37,7 +37,7 @@ function ChapterSection(props: ChapterSectionProps) {
       })
   }, [props.chapterNumber])
 
-  if (!sections) return <h2>loading sectio</h2>
+  if (!sections) return <h2>loading sections</h2>
 
   return (
     <StyledSections>
