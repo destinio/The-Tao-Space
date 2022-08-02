@@ -13,4 +13,14 @@ interface ChapterType {
   updatedAt: string
 }
 
-export { type Section, type ChapterType }
+interface SectionType {
+  _id: string
+  section_number: number
+  chapter_number: number
+  lines?: string[] | null
+  __v: number
+  createdAt: string
+  updatedAt: string
+}
+
+export { type Section, type ChapterType, type SectionType }

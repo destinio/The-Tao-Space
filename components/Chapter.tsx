@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useApp } from 'hooks/useApp'
 import { ChapterType } from 'types'
 import { Nav } from './Nav'
+import { ChapterSection } from './ChapterSection'
 
 interface StyledChapterProps {
   currentTheme: {
@@ -59,6 +60,7 @@ interface ChapterProps {
 
 function Chapter({ chapterId }: ChapterProps) {
   const [chapter, setChapter] = useState<ChapterType | undefined>(null!)
+
   const { getChapter, chaptersLoaded } = useChapters()
   const { currentTheme } = useApp()
 
@@ -78,31 +80,8 @@ function Chapter({ chapterId }: ChapterProps) {
         <h3>{chapter.title || ''}</h3>
       </StyledChapterHeader>
       <StyledChapterContent>
-        {/* {data.sections.map(s => {
-          return (
-            <section
-              key={Math.floor(Math.random() * 100000)}
-              data-section-id={s.section_number}
-            >
-              {s.lines.map(l => {
-                return <p key={`${Math.floor(Math.random() * 100000)}`}>{l}</p>
-              })}
-            </section>
-          )
-        })} */}
-
-        <section className="notes">
-          <h3>Notes:</h3>
-          {/* <div>
-            {data.notes.map(n => {
-              if (n.length === 0) {
-                return <br key={Math.floor(Math.random() * 100000)} />
-              }
-
-              return <p key={Math.floor(Math.random() * 100000)}>{n}</p>
-            })}
-          </div> */}
-        </section>
+        <ChapterSection chapterNumber={chapter.chapter_number.toString()} />
+        {/* Notes */}
       </StyledChapterContent>
     </StyledChapter>
   )
