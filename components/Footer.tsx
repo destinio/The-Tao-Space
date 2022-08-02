@@ -1,16 +1,20 @@
 import styled from '@emotion/styled'
+import { useApp } from 'hooks/useApp'
 import Link from 'next/link'
 import { VscJson } from 'react-icons/vsc'
 import { hexColors } from '../styles/GlobalStyles'
 import { Rainbow } from './Rainbow'
 
-const StyledFooter = styled.footer`
-  color: #222;
-
-  h3 {
-    margin: 0 0 1em;
+interface StyledFooterProps {
+  currentTheme: {
+    bg: string
+    text: string
   }
-`
+}
+
+const StyledFooter = styled.footer<StyledFooterProps>(props => ({
+  margin: '0 0 1em',
+}))
 
 const StyledSection = styled.section`
   h2 {
@@ -38,8 +42,9 @@ const StyledFooterMain = styled.div`
 `
 
 function Footer() {
+  const { currentTheme } = useApp()
   return (
-    <StyledFooter>
+    <StyledFooter currentTheme={currentTheme}>
       <Rainbow />
       <StyledFooterMain>
         <StyledSection id="resources">

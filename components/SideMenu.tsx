@@ -1,9 +1,8 @@
 import styled from '@emotion/styled'
 import { ReactNode } from 'react'
 import { FaTimes } from 'react-icons/fa'
+import { hexColors } from 'styles/GlobalStyles'
 import { useSideMenu } from '../hooks/useSideMenu'
-
-const mainColor = '#7cbd13'
 
 const StyledMenu = styled.div`
   position: fixed;
@@ -12,8 +11,8 @@ const StyledMenu = styled.div`
   height: 100vh;
   width: 100%;
   max-width: 400px;
-  background-color: #fafbff;
-  border-left: 4px solid ${mainColor};
+  background-color: ${hexColors.white};
+  border-left: 4px solid ${hexColors.green};
   z-index: 2;
 `
 
@@ -22,8 +21,8 @@ const StyledMenuHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  background-color: ${mainColor};
-  color: #fff;
+  background-color: ${hexColors.green};
+  color: ${hexColors.white};
 `
 
 const StyledContent = styled.nav`

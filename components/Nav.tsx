@@ -4,6 +4,7 @@ import { useSideMenu } from 'hooks/useSideMenu'
 import { useTheme } from 'hooks/useTheme'
 import { ChaptersMenu } from './ChaptersMenu'
 import { hexColors } from 'styles/GlobalStyles'
+import { useApp } from 'hooks/useApp'
 
 const StyledNav = styled.nav`
   position: fixed;
@@ -30,7 +31,7 @@ const StyledNav = styled.nav`
 
 function Nav() {
   const { openMenuWithContent } = useSideMenu()
-  const { changeTheme, currentTheme } = useTheme()
+  const { changeTheme, currentTheme } = useApp()
 
   function handleLightDarkChange() {
     if (currentTheme.name === 'light') {

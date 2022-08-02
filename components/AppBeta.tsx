@@ -4,16 +4,12 @@ import { Rainbow } from './Rainbow'
 import { Footer } from './Footer'
 import { hexColors } from '../styles/GlobalStyles'
 import { convertToRoman } from 'functions/convertRoman'
+import { useApp } from 'hooks/useApp'
 
 const StyledApp = styled.div`
   display: grid;
   height: 100vh;
   grid-template-rows: repeat(2, 1fr);
-
-  main {
-    background-color: ${hexColors.white};
-    height: 100vh;
-  }
 
   @media screen and (min-width: 800px) {
     grid-template-columns: 400px auto;
@@ -50,9 +46,21 @@ const StyledApp = styled.div`
   }
 `
 
+const StyledAppMain = styled.main<{
+  currentTheme: {
+    bg: string
+    text: string
+  }
+}>(props => ({
+  backgroundColor: props.currentTheme.bg,
+  color: props.currentTheme.text,
+}))
+
 // const StyledHeader
 
 function AppBeta() {
+  const { currentTheme } = useApp()
+
   return (
     <>
       {/* <Rainbow /> */}
@@ -74,10 +82,10 @@ function AppBeta() {
           </summary>
         </div>
         <div>{convertToRoman(21)}</div>
-        <main>
+        <StyledAppMain currentTheme={currentTheme}>
           <Rainbow />
           <Footer />
-        </main>
+        </StyledAppMain>
       </StyledApp>
     </>
   )
