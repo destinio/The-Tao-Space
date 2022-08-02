@@ -1,3 +1,4 @@
+import { Chapter } from 'components/Chapter'
 import { useRouter } from 'next/router'
 
 export default function Chapters() {
@@ -5,7 +6,9 @@ export default function Chapters() {
     query: { id },
   } = useRouter()
 
-  return <>Chapter {id}</>
+  if (!id) return <h1>Loading...</h1>
+
+  return <Chapter chapterId={id} />
 }
 
 export { Chapters }

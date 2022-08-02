@@ -8,10 +8,10 @@ import { useApp } from 'hooks/useApp'
 
 const StyledNav = styled.nav`
   position: fixed;
-  top: 1.5em;
-  right: 1em;
+  top: 2rem;
+  right: 1rem;
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   color: #fff;
   z-index: 1;
 

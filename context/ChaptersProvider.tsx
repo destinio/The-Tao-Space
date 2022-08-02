@@ -3,6 +3,7 @@ import { Chapter } from '../types'
 
 interface ChaptersCtxValues {
   chapters: Chapter[]
+  getChapter: (id: string) => void
 }
 
 const ChaptersCtx = createContext<ChaptersCtxValues>(null!)
@@ -23,8 +24,19 @@ function ChaptersProvider({ children }: ChaptersProviderProps) {
       })
   }, [])
 
+  function getChapter(id: string) {
+    if (!chapters) {
+      console.log('no chapters from getChapters')
+    }
+
+    const foundChapter = chapters.find(c => c.chapter_number.toString() === id)
+
+    console.log(foundChapter)
+  }
+
   const chaptersValues = {
     chapters,
+    getChapter,
   }
 
   return (

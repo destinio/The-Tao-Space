@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import { useTheme } from '../hooks/useTheme'
-import { Chapter as ChapterType } from '../types'
+import { useChapters } from 'hooks/useChapters'
+import { useEffect, useState } from 'react'
+import { useTheme } from 'hooks/useTheme'
 
 const StyledChapter = styled.article`
   position: relative;
@@ -55,23 +56,26 @@ const StyledChapterContent = styled.div<StyledChapterContentProps>(props => ({
 }))
 
 interface ChapterProps {
-  data: ChapterType
+  chapterId: string | string[]
 }
 
-function Chapter({ data }: ChapterProps) {
+function Chapter({ chapterId }: ChapterProps) {
+  const [chapter, setChapter] = useState(null!)
+  const { getChapter } = useChapters()
   const { currentTheme } = useTheme()
 
+  useEffect(() => {}, [])
+
+  if (!chapter) return <h1>Loading...</h1>
+
   return (
-    <StyledChapter
-      id={`chapter-${data.id}`}
-      data-chapter-id={`chapter-${data.id}`}
-    >
+    <StyledChapter>
       <StyledChapterHeader>
-        <h2 data-chapter-id={data.id}>Chapter {data.id}</h2>
-        <h3>{data.title}</h3>
+        <h2>Chapter {chapterId}</h2>
+        {/* <h3>{data.title}</h3> */}
       </StyledChapterHeader>
       <StyledChapterContent currentTheme={currentTheme}>
-        {data.sections.map(s => {
+        {/* {data.sections.map(s => {
           return (
             <section
               key={Math.floor(Math.random() * 100000)}
@@ -82,11 +86,11 @@ function Chapter({ data }: ChapterProps) {
               })}
             </section>
           )
-        })}
+        })} */}
 
         <section className="notes">
           <h3>Notes:</h3>
-          <div>
+          {/* <div>
             {data.notes.map(n => {
               if (n.length === 0) {
                 return <br key={Math.floor(Math.random() * 100000)} />
@@ -94,7 +98,7 @@ function Chapter({ data }: ChapterProps) {
 
               return <p key={Math.floor(Math.random() * 100000)}>{n}</p>
             })}
-          </div>
+          </div> */}
         </section>
       </StyledChapterContent>
     </StyledChapter>
