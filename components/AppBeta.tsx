@@ -54,9 +54,8 @@ const StyledAppMain = styled.main<{
 }>(props => ({
   backgroundColor: props.currentTheme.bg,
   color: props.currentTheme.text,
+  gridRow: '1 / -1',
 }))
-
-// const StyledHeader
 
 function AppBeta() {
   const { currentTheme } = useApp()

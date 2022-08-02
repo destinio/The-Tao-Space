@@ -7,11 +7,7 @@ const StyledChapter = styled.ul``
 function ChaptersMenu() {
   const { chapters } = useChapters()
 
-  console.log(chapters)
-
   if (!chapters) return <h1>loading...</h1>
-
-  console.log(`${chapters[2].chapter_number}`)
 
   return (
     <StyledChapter>

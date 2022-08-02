@@ -1,17 +1,26 @@
 import styled from '@emotion/styled'
+import { useApp } from 'hooks/useApp'
 import { ReactNode } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { hexColors } from 'styles/GlobalStyles'
 import { useSideMenu } from '../hooks/useSideMenu'
 
-const StyledMenu = styled.div`
+interface Props {
+  currentTheme: {
+    bg: string
+    text: string
+  }
+}
+
+const StyledMenu = styled.div<Props>`
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 100%;
   max-width: 400px;
-  background-color: ${hexColors.white};
+  background-color: ${props => props.currentTheme.bg};
+  color: ${props => props.currentTheme.text};
   border-left: 4px solid ${hexColors.green};
   z-index: 2;
 `
@@ -45,9 +54,10 @@ interface SideMenuProps {
 
 function SideMenu({ content, title }: SideMenuProps) {
   const { closeSideMenu } = useSideMenu()
+  const { currentTheme } = useApp()
 
   return (
-    <StyledMenu>
+    <StyledMenu currentTheme={currentTheme}>
       <StyledMenuHeader>
         <h2>{title}</h2>
         <StyledCloseIcon onClick={closeSideMenu} />

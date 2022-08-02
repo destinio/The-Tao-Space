@@ -34,10 +34,6 @@ const GlobalStyles = css`
     }
   }
 
-  main {
-    /* max-width: 800px; */
-  }
-
   header {
     background-color: #6a4c93;
     padding: 1em;
