@@ -9,13 +9,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Global styles={GlobalStyles} />
-      <ChaptersProvider>
-        <AppProvider>
+      <AppProvider>
+        <ChaptersProvider>
           <SideMenuProvider>
             <Component {...pageProps} />
           </SideMenuProvider>
-        </AppProvider>
-      </ChaptersProvider>
+        </ChaptersProvider>
+      </AppProvider>
     </>
   )
 }

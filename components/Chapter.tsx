@@ -1,7 +1,9 @@
 import styled from '@emotion/styled'
 import { useChapters } from 'hooks/useChapters'
 import { useEffect, useState } from 'react'
-import { useTheme } from 'hooks/useTheme'
+import { useApp } from 'hooks/useApp'
+import { Chapter } from 'types'
+import { Nav } from './Nav'
 
 const StyledChapter = styled.article`
   position: relative;
@@ -56,23 +58,28 @@ const StyledChapterContent = styled.div<StyledChapterContentProps>(props => ({
 }))
 
 interface ChapterProps {
-  chapterId: string | string[]
+  chapterId: string
 }
 
 function Chapter({ chapterId }: ChapterProps) {
-  const [chapter, setChapter] = useState(null!)
-  const { getChapter } = useChapters()
-  const { currentTheme } = useTheme()
+  const [chapter, setChapter] = useState<Chapter>(null!)
+  const { getChapter, chaptersLoaded } = useChapters()
+  const { currentTheme } = useApp()
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    if (chaptersLoaded) {
+      setChapter(getChapter(chapterId))
+    }
+  }, [chaptersLoaded])
 
-  if (!chapter) return <h1>Loading...</h1>
+  if (!chaptersLoaded || !chapter) return <h1>Loading...</h1>
 
   return (
     <StyledChapter>
+      <Nav />
       <StyledChapterHeader>
         <h2>Chapter {chapterId}</h2>
-        {/* <h3>{data.title}</h3> */}
+        <h3>{chapter.title || ''}</h3>
       </StyledChapterHeader>
       <StyledChapterContent currentTheme={currentTheme}>
         {/* {data.sections.map(s => {

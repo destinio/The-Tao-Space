@@ -2,13 +2,14 @@ import { Chapter } from 'components/Chapter'
 import { useRouter } from 'next/router'
 
 export default function Chapters() {
-  const {
-    query: { id },
-  } = useRouter()
+  const router = useRouter()
 
-  if (!id) return <h1>Loading...</h1>
+  const chapterNumber = router.query.id as string
 
-  return <Chapter chapterId={id} />
+  if (!router) return <h1>Loading...</h1>
+
+  // return <h1>Chapter</h1>
+  return <Chapter chapterId={chapterNumber} />
 }
 
 export { Chapters }

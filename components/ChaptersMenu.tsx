@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
-import { useChapters } from '../hooks/useChapters'
+import { useChapters } from 'hooks/useChapters'
 
 const StyledChapter = styled.ul``
 
