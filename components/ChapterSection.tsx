@@ -37,9 +37,9 @@ function ChapterSection(props: ChapterSectionProps) {
     <StyledSections>
       {sections.map(s => {
         return (
-          <section>
+          <section key={s._id}>
             {s.lines?.map(l => (
-              <p>{l}</p>
+              <p key={Math.floor(Math.random() * 100000)}>{l}</p>
             ))}
           </section>
         )
