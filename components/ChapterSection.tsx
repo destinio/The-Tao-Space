@@ -1,25 +1,41 @@
 import styled from '@emotion/styled'
+import { useApp } from 'hooks/useApp'
+import { useTheme } from 'hooks/useTheme'
 import { useEffect, useState } from 'react'
+import { hexColors } from 'styles/GlobalStyles'
 import { SectionType } from 'types'
 
-const StyledSections = styled.div`
+interface StyledSectionsProps {
+  currentTheme: {
+    name: string
+  }
+}
+
+const StyledSections = styled.div<StyledSectionsProps>`
   padding: 1rem;
 
   section {
     padding: 1rem;
+    border-radius: 0.5rem;
     &:hover {
-      background-color: #d9dceb;
       cursor: pointer;
+      background-color: #cee3ce;
+      color: #111;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
     }
   }
 `
-
+// #cee3ce
 interface ChapterSectionProps {
   chapterNumber: string
 }
 
 function ChapterSection(props: ChapterSectionProps) {
   const [sections, setSections] = useState<SectionType[]>(null!)
+  const { currentTheme } = useApp()
 
   useEffect(() => {
     fetch('/api/sections')
@@ -40,7 +56,7 @@ function ChapterSection(props: ChapterSectionProps) {
   if (!sections) return <h2>loading sections</h2>
 
   return (
-    <StyledSections>
+    <StyledSections currentTheme={currentTheme}>
       {sections.map(s => {
         return (
           <section key={s._id}>

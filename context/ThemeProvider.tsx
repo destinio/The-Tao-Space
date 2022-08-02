@@ -22,6 +22,7 @@ interface ThemeCtxValues {
     bg: string
     text: string
   }
+  isLightTheme: () => boolean
 }
 const ThemeCtx = createContext<ThemeCtxValues>(null!)
 
@@ -36,9 +37,14 @@ function ThemeProvider({ children }: ThemeProviderProps) {
     setCurrentTheme(themes[theme])
   }
 
+  function isLightTheme() {
+    return currentTheme.name === 'light'
+  }
+
   const returnValues = {
     currentTheme,
     changeTheme,
+    isLightTheme,
   }
 
   return (

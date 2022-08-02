@@ -18,6 +18,7 @@ const StyledChapter = styled.article<StyledChapterProps>`
   background-color: ${props => props.currentTheme.bg};
   color: ${props => props.currentTheme.text};
   height: 100vh;
+  font-size: 1.25rem;
 
   p {
     margin: 0 0 0.25em;
@@ -85,7 +86,7 @@ function Chapter({ chapterId }: ChapterProps) {
           <h3>Notes:</h3>
           <ul>
             {chapter.notes?.map(n => (
-              <p>{n}</p>
+              <p key={Math.floor(Math.random() * 1000000)}>{n}</p>
             ))}
           </ul>
         </div>
