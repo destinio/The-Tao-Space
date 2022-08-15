@@ -17,13 +17,14 @@ const StyledSections = styled.div<StyledSectionsProps>`
   section {
     padding: 1rem;
     border-radius: 0.5rem;
+
     &:hover {
       cursor: pointer;
       background-color: #cee3ce;
       color: #111;
     }
 
-    p {
+    p:not(:last-child) {
       margin-bottom: 0.75rem;
     }
   }
